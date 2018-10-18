@@ -3,17 +3,16 @@
   box-sizing: border-box;
 }
 
-ul, p, img {
-    margin-bottom: 2rem;
+ul, p, .fotok {
+    margin-bottom: 2.5rem;
 }
 
 body {
-  width: 100%;
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   line-height: 1.5rem;
   color: #444349;
-  background: url('https://gallery.yopriceville.com/var/albums/Backgrounds/Gold_Metal_Background.png?m=1503622438') repeat center;
+  background-color: #FFEBCD;
   text-align: center;
 }
 
@@ -25,6 +24,7 @@ h1, h2 {
 h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  margin-top:2rem;
 }
 
 .container {
@@ -80,9 +80,15 @@ li {
   align-self: flex-start;
 }
 
+  p {
+  width: 70%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
 img{
   padding: 1rem;
-  height: 20rem;
+  height: 30rem;
 }
 
 a{
@@ -100,6 +106,24 @@ footer{
   align-items: center;
   font-size: .875rem;
   padding: .5rem 1rem;
+}
+
+@media (max-width: 400px) { 
+img{
+  padding: 0.5rem;
+  height: 10rem;
+}
+  .text-box h1{
+  font-size: 2.5rem;
+  }
+  h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+  ul{
+  width: 65%;
+  margin: 0 auto;
+}
 }
 
 @media (min-width: 768px) { 
